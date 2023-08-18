@@ -69,6 +69,15 @@ The following tables show the time needed to complete 100 steps without gradient
 | 64         | 512             | 1h 21m 2s           | 3h 26m 4s                 | TBD                     | -           | -         |
 | 256        | 512             | 6h 33m 7s           | -                         | TBD                     | -           | -         |
 
+| Batch size | Sequence length | NV RTX 3080 |
+| ---------- | --------------- | ----------- |
+| 16         | 128             | 18.53s      |
+| 64         | 128             | 31.63s      |
+| 256        | 128             | -           |
+| 16         | 512             | 38.11s      |
+| 64         | 512             | -           |
+| 256        | 512             | -           |
+
 
 **Inference**:
 
@@ -81,6 +90,15 @@ The following tables show the time needed to complete 100 steps without gradient
 | 64         | 512             | 17m 51s           | 3m 59s                    | 1m 27s                  | 1m 4s       | 3m 24s    |
 | 256        | 512             | 1h 10m 41s        | 15m 47s                   | 5m 42s                  | 4m 10s      | 14m 18s   |
 
+
+| Batch size | Sequence length | NV RTX 3080 |
+| ---------- | --------------- | ----------- |
+| 16         | 128             | 3.17s       |
+| 64         | 128             | 11.14s      |
+| 256        | 128             | 42.76s      |
+| 16         | 512             | 13.65s      |
+| 64         | 512             | 52.71s      |
+| 256        | 512             | 205.91s     |
 
 # Considerations
 
