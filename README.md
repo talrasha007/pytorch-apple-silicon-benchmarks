@@ -69,14 +69,14 @@ The following tables show the time needed to complete 100 steps without gradient
 | 64         | 512             | 1h 21m 2s           | 3h 26m 4s                 | TBD                     | -           | -         |
 | 256        | 512             | 6h 33m 7s           | -                         | TBD                     | -           | -         |
 
-| Batch size | Sequence length | NV RTX 3080 |
-| ---------- | --------------- | ----------- |
-| 16         | 128             | 18.53s      |
-| 64         | 128             | 31.63s      |
-| 256        | 128             | -           |
-| 16         | 512             | 38.11s      |
-| 64         | 512             | -           |
-| 256        | 512             | -           |
+| Batch size | Sequence length | NV RTX 3080 | M2 MAX 96GB |
+| ---------- | --------------- | ----------- | ----------- |
+| 16         | 128             | 18.53s      | 19.31s      |
+| 64         | 128             | 31.63s      | 62.39s      |
+| 256        | 128             | -           | 4m32s       |
+| 16         | 512             | 38.11s      | 74.27s      |
+| 64         | 512             | -           | 5m18s       |
+| 256        | 512             | -           | -           |
 
 
 **Inference**:
@@ -91,14 +91,14 @@ The following tables show the time needed to complete 100 steps without gradient
 | 256        | 512             | 1h 10m 41s        | 15m 47s                   | 5m 42s                  | 4m 10s      | 14m 18s   |
 
 
-| Batch size | Sequence length | NV RTX 3080 |
-| ---------- | --------------- | ----------- |
-| 16         | 128             | 3.17s       |
-| 64         | 128             | 11.14s      |
-| 256        | 128             | 42.76s      |
-| 16         | 512             | 13.65s      |
-| 64         | 512             | 52.71s      |
-| 256        | 512             | 205.91s     |
+| Batch size | Sequence length | NV RTX 3080 | M2 MAX 96G |
+| ---------- | --------------- | ----------- | ---------- |
+| 16         | 128             | 3.17s       | 5.27s      |
+| 64         | 128             | 11.14s      | 19.25s     |
+| 256        | 128             | 42.76s      | 79.59s     |
+| 16         | 512             | 13.65s      | 23.93s     |
+| 64         | 512             | 52.71s      | 98.65s     |
+| 256        | 512             | 205.91s     | 18m35s     |
 
 # Considerations
 
